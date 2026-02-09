@@ -19,12 +19,15 @@
     h2 { margin-top: 2.5rem; }
     hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
     img { max-width: 100%; height: auto; display: block; margin: 1.5rem 0; }
+    figure { margin: 1.5rem 0; }
+    figure img { margin: 0; }
+    figcaption { font-size: 0.85rem; color: #666; margin-top: 0.5rem; }
+    figcaption a { color: #666; }
   </style>
 </head>
 <body>
   <main>
     <h1>Learning to Draw Again With AI</h1>
-    <p><em>An essay on divergence, taste, and visual exploration in AI-native design workflows</em></p>
 
     <hr>
 
@@ -36,16 +39,43 @@
     <hr>
 
     <h2>The Image that Understood Itself</h2>
-    <p>I used to be a designer. I remember when software was designed on Photoshop and pixelated assets were our main artifact. Then the awkwardness of learning Sketch when it first did the rounds. And then the Figma revolution, which seemed like the end of history insofar as design tools went. The arrival of Claude Code shook my professional sense of self quite deeply - in short order I stopped using Figma, and started shipping code directly. This was an exciting time; it was the beginning of visual tools in the AI realm, and it seemed like every week a new workflow was being lauded as the solution to all our design woes. Under it all, Claude remained a sort of technological bedrock, the syphon through which everything I made eventually had to pass.</p>
-    <p>One day I was playing around in Flora, a tool meant for these generative visual workflows. On a whim, I gave it a React component's code to see if it could generate an image of the interface (i.e. without relying on a browser's render engine). It was a sort of "do you know what you're actually doing"-type test. To my surprise, it did a pretty good job. Later that summer, when I hit a creative block on a feature I was building, I used Nano Banana to generate 10 variations of interface ideas in an effort to move forward. Nothing crazy, just images of what these 10 interfaces could look like. It helped me get unstuck, and it was a revelation - these image models had a much closer relationship to code than I previously thought. I was working in code, but thinking in images, and the speed was phenomenal. This, I thought, was a pretty good idea.</p>
 
-    <img src="assets/images/possibilities-placeholder.svg" alt="Placeholder concept board">
+    <img src="assets/images/ui-design-photoshop.webp" alt="Mobile app interface design in Adobe Photoshop">
+
+    <p>I used to be a designer. I remember when software was designed on Photoshop and pixelated assets were our main artifact. Then the awkwardness of learning Sketch when it first did the rounds. And then the Figma revolution, which seemed like the end of history insofar as design tools went. The arrival of Claude Code shook my professional sense of self quite deeply - in short order I stopped using Figma, and started shipping code directly. This was an exciting time; it was the beginning of visual tools in the AI realm, and it seemed like every week a new workflow was being lauded as the solution to all our design woes. Under it all, Claude remained a sort of technological bedrock, the syphon through which everything I made eventually had to pass.</p>
+
+    <figure>
+      <img src="assets/images/flora-react-component.png" alt="Using React component code as input for image generation of UI">
+      <figcaption>Using React component code as input for image generation of UI</figcaption>
+    </figure>
+
+    <p>One day I was playing around in <a href="https://x.com/floraai">@floraai</a>, a tool meant for these generative visual workflows. On a whim, I gave it a React component's code to see if it could generate an image of the interface (i.e. without relying on a browser's render engine). It was a sort of "do you know what you're actually doing"-type test. To my surprise, it did a pretty good job. Later that summer, when I hit a creative block on a feature I was building, I used Nano Banana to generate 10 variations of interface ideas in an effort to move forward. Nothing crazy, just images of what these 10 interfaces could look like. It helped me get unstuck, and it was a revelation - these image models had a much closer relationship to code than I previously thought. I was working in code, but thinking in images, and the speed was phenomenal. This, I thought, was a pretty good idea.</p>
+
+    <figure>
+      <img src="assets/images/flora-ui-explorations.png" alt="Experimenting with UI exploration through images on Flora">
+      <figcaption>Experimenting with UI exploration through images on Flora</figcaption>
+    </figure>
 
     <hr>
 
     <h2>Paper, Layers, Canvas</h2>
+
+    <figure>
+      <img src="assets/images/mockup-history.webp" alt="History of mockups: paper prototypes, early digital tools, and Photoshop">
+      <figcaption>image from Saint Friend blog article: <a href="https://medium.com/@saintfriend/almost-real-a-brief-history-of-mockups-674a19198a2a">Almost Real: A Brief History of Mockups</a></figcaption>
+    </figure>
+
     <p>The process of exploring complex systems visually has a very long tradition in software engineering. Interface-like paper prototypes became standard practice at powerhouses like IBM, Microsoft, and Honeywell in the 80's and 90's. The insight was simple: using throwaway visual artifacts to explore how interfaces - and therefore code - could be structured, was an easy way to save time and produce better outcomes.</p>
+
+    <figure>
+      <img src="assets/images/figma-dev-mode.png" alt="Figma Dev mode interface">
+      <figcaption>Figma Dev mode</figcaption>
+    </figure>
+
     <p>Then came Photoshop, and with it the concept of layers and canvases. Suddenly a complex spatial language was available to the designer, to be explored digitally and without fear of mistakes. You could, arguably for the first time, truly see and feel the interface of a program before it was created. Figma expanded on this immensely. Closer to code, and with a tighter language, Figma started blurring the barriers between design tools and software systems. It worked well because it was malleable enough to allow for the process while getting you closer to production.</p>
+
+    <img src="assets/images/claude-frontend-skills.png" alt="Improving frontend design through Skills - Claude blog">
+
     <p>And now? We're all back in the terminal. In what seems like a victory for circular-time proponents, we've ended up back where we started. Agents, AI workflows, orchestration frameworks - the weight of text is enormous, and the pull to use it more so. Designers, to everyone's amazement (and chagrin) now live in the codebase along with everyone else.</p>
     <p>A recent Figma post talked about the need for design systems to further expand into lower-level concerns - an existential need to continue unifying the whole stack. And I think they're right, but I'd go even further. The visual capabilities of AI systems (which, I believe, have been underutilized in software development) are so capable, that we're now able to leapfrog over Figma into a much faster, intuitive, and also cohesive space when it comes to software design in the age of AI. If we don't take this leap, then tools like Figma will invariably continue to be pulled towards code-first philosophies, and we risk genuinely losing the exploration phase of design entirely.</p>
 
@@ -53,7 +83,10 @@
 
     <h2>Taste is Selection</h2>
     <p>The fundamental shift is around the role of the designer and not really about tools. With the system we're proposing, you go from being a sole creator at the mercy of AI specificity, to being a creative director, a conductor, and a curator all in one. You're not making every pixel. You're articulating intent, guiding the generative process, and making choices from an array of possibilities that are presented to you. AI becomes a collaborator rather than an executor - an exploration engine, not a cold solution generator.</p>
-    <p>Soleio said it: "Taste is selection. Scroll through variations. Pick and choose." Design nowadays is a sibling to browsing and scrolling. The language of inspiration is the "board", except that it's always been fed to you with little space for your feedback. The idea is to subvert this: you have an idea, you generate plenty of throwaway images, and then you curate what you like. You edit, mark out parts that you like and don't like. You slowly pare down and converge to a more unified idea, and then branch out again, iterating as many times as you like.</p>
+
+    <img src="assets/images/tweet-soleio.png" alt="Soleio tweet: Taste is selection—and machines can choose, too.">
+
+    <p>Design nowadays is a sibling to browsing and scrolling. The language of inspiration is the "board", except that it's always been fed to you with little space for your feedback. The idea is to subvert this: you have an idea, you generate plenty of throwaway images, and then you curate what you like. You edit, mark out parts that you like and don't like. You slowly pare down and converge to a more unified idea, and then branch out again, iterating as many times as you like.</p>
     <p>The goal here isn't to solve the tension between control and serendipity, rather it's to manage it dynamically. Many design systems share a sort of "double diamond" structure, reflective of a fundamental need to broaden and collapse the various inputs to the process multiple times in order to arrive at solid artifacts. In our system the double diamond is the driving metaphor, both visually and spatially - throughout the process, you can actually see this divergence and convergence happening. We think this creates an interesting feedback loop: an awareness of the design process, while you're engaging in it, creates a better process, which feeds into better work, and so on.</p>
 
     <hr>
@@ -61,7 +94,13 @@
     <h2>Learning to Draw Again</h2>
     <p>Why is this possible now? Agents are finally proficient at understanding images to an extent that allows for specific, nuanced adjustment and variation. They can look at a sketch, a screenshot, or a rough mockup, and produce a full interface from it, just as well as from Figma dev mode or any structured format. This begs the question: why are we still insisting on translating visual ideas into prose for terminal-based LLMs?</p>
     <p>Text prompts strip out the most intuitive ways of communicating and exploring visual relationships and ideas. You're quite literally trying to describe something that doesn't live in language. It seems far more logical to meet the AI's where they're at - when dealing with "visual", use their visual capabilities. Otherwise, you're basically trying to paint a painting by reading the artist a detailed list of instructions.</p>
+
+    <img src="assets/images/tweet-bnj-variantui.png" alt="Ben South tweet about Variant UI parallel generation">
+
     <p>Some people are already trying to build towards this. Variant UI is working on parallel generation, scroll through variations, design as browsing. All of this we believe to be the right direction. Claude Code Playgrounds is another good example - visual feedback loops, and the ability to generate an artifact and iterate on it. Nonetheless, it's still a one-artifact experience, which prioritizes tiny, incremental refinement over more deep and expansive exploration.</p>
+
+    <img src="assets/images/tweet-thariq-playgrounds.png" alt="Thariq tweet about Claude Code Playgrounds">
+
     <p>The gap that remains has to do with exploring maximal divergence as a set of possibilities and then grounding that in code. No one's really cracked this yet, but the pieces are there.</p>
     <p>AI has drawn us back into the terminal, into the heart of the computer. Text is king. But by sticking to this paradigm we risk overlooking other abilities that have recently ballooned in capability, namely images. AI is now, by all accounts, very good at working with images. So why not lean into that? Why bother with a translation layer that distances us from the core of what we're interested in? A shift towards images is a shift closer to the source material, and with it, a broadening of design and creative possibilities. And ultimately, this is a shift back to the origins of design in software - by betting on images we are once again picking up the pencil, and setting a sheet of paper in front of us. We just need to learn to draw.</p>
   </main>
